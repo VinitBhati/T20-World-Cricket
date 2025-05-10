@@ -4,7 +4,7 @@
 This Power BI dashboard presents a comparative analysis of top power hitters and openers in the T20 World Cup (Qualifier + Super 12 stages). The visualizations provide key performance metrics such as total runs, strike rate, boundary %, batting average, and more to help in team selection and performance comparison.<br>
 <br>
 🧰 Tools Used<br>
-Python Pandas  - for cleaning and structuring player data<br>
+Python - for cleaning and structuring player data by pandas<br>
 Jupyter-Notebook - for cleaning <br>
 Power BI – for data modeling, visualization, and interactivity<br>
 <br>
