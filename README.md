@@ -4,18 +4,21 @@
 This Power BI dashboard presents a comparative analysis of top power hitters and openers in the T20 World Cup (Qualifier + Super 12 stages). The visualizations provide key performance metrics such as total runs, strike rate, boundary %, batting average, and more to help in team selection and performance comparison.<br>
 <br>
 🧰 Tools Used<br>
+Python Pandas  - for cleaning and structuring player data<br>
+Jupyter-Notebook - for cleaning <br>
 Power BI – for data modeling, visualization, and interactivity<br>
-Microsoft Excel – for cleaning and structuring player data<br>
 <br>
-🧹 Data Cleaning (Excel)<br>
-Before dashboard creation, the dataset underwent the following cleaning steps:<br>
-Removed duplicates – Ensured no repeated entries for players or matches.<br>
-Handled missing values – Replaced null values with appropriate placeholders (e.g., 0 or "Not Available").<br>
-Converted data types – Standardized numeric columns (e.g., Runs, Balls Faced) and formatted text (e.g., Team, Batting Style).<br><br>
-Created calculated metrics, including:<br>
-Strike Rate = (Runs / Balls Faced) * 100<br>
-Boundary % = (Boundaries / Balls Faced) * 100<br>
-Batting Average = Runs / Innings Played (for players not out, handled as per cricket rules)<br>
+📂 Data Source<br>
+The dataset was originally in JSON format and was converted to CSV using Python and Pandas for easier data manipulation and visualization.<br>
+<br>
+🧹 Data Cleaning (in Jupyter Notebook)<br>
+Parsed JSON data into a structured DataFrame.<br>
+Handled nested structures and flattened them for analysis.<br>
+Removed null and inconsistent values.<br>
+Converted data types (e.g., strings to integers/floats).<br>
+Filtered relevant columns such as:<br>
+Player Name, Team, Batting Style, Innings Batted<br>
+Runs, Balls Faced, Strike Rate, Batting Average, Batting Position, Boundary Percentage<br>
 <br>
 📈 Dashboard Features<br>
 🔹 Tabs and Filters:<br>
